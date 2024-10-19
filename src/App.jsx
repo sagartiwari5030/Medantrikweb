@@ -1,8 +1,8 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Form from './Pages/Cardview/CardView'
-import CardView from './Pages/Form/form';
+import Form from './Pages/Form/form'
+import CardView from './Pages/Cardview/CardView';
 
 function App() {
   return (
