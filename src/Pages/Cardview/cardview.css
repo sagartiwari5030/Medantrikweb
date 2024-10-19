@@ -7,6 +7,8 @@
   background-color: #ffffff; /* Cooler white background for the container */
   border-radius: 20px; /* Rounded edges for the container */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
+  overflow: hidden; /* Prevents content overflow */
+  width: 90%; /* Ensures container width is responsive */
 }
 
 .cardview-title {
@@ -31,12 +33,14 @@
 .card {
   background-color: #f5f5f5; /* Light grey background for cards */
   width: 300px;
+  max-width: 100%; /* Prevent cards from exceeding container width */
   padding: 20px;
   border-radius: 20px; /* Fully rounded edges for the card */
   border: 2px solid #FF9800; /* Add a subtle orange border for better definition */
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3); /* 3D effect with shadow */
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+  box-sizing: border-box; /* Includes padding and border in card width */
 }
 
 .card:hover {
@@ -78,11 +82,19 @@
 @media (max-width: 768px) {
   .card {
     width: 100%; /* Make each card take the full width on small screens */
+    margin-bottom: 20px; /* Add space between stacked cards */
   }
 
   .card-grid {
     flex-direction: column; /* Stack cards vertically on small screens */
-    align-items: center; /* Center-align each card in the column */
+    align-items: stretch; /* Make sure cards stretch to fit the container width */
+    width: 100%; /* Ensure the card grid takes up full width */
+  }
+
+  .cardview-container {
+    width: 100%; /* Make container take the full width on small screens */
+    padding: 10px; /* Reduce padding for better fit */
+    margin: 20px auto; /* Adjust margin for smaller screens */
   }
 }
 
