@@ -26,16 +26,19 @@ function CardView() {
       name: 'conductTest',
       title: 'Conduct Test',
       content: 'Initiate various medical tests and log the results directly in the patient’s profile.',
+      link: '#', // Placeholder link for consistent structure
     },
     {
       name: 'addPatient',
       title: 'Add Patient',
       content: 'Easily add new patients to the system for tracking their medical history and appointments.',
+      link: '#', // Placeholder link for consistent structure
     },
     {
       name: 'deviceSetup',
       title: 'Device Setup',
       content: 'Configure and calibrate medical devices for accurate data collection and diagnostics.',
+      link: '#', // Placeholder link for consistent structure
     },
   ];
 
@@ -44,25 +47,14 @@ function CardView() {
       <h2 className="cardview-title">Medical Management Dashboard - Card View</h2>
       <div className="card-grid">
         {cards.map((card) => (
-          card.link ? (
-            <a
-              key={card.name}
-              href={card.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card-link"
-            >
-              <div className="card">
-                <h3 className="card-title">{card.title}</h3>
-                <div className="card-content">
-                  <div className="card-small-content">
-                    {card.content}
-                  </div>
-                </div>
-              </div>
-            </a>
-          ) : (
-            <div key={card.name} className="card">
+          <a
+            key={card.name}
+            href={card.link}
+            target={card.link !== '#' ? '_blank' : '_self'}
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
               <h3 className="card-title">{card.title}</h3>
               <div className="card-content">
                 <div className="card-small-content">
@@ -70,7 +62,7 @@ function CardView() {
                 </div>
               </div>
             </div>
-          )
+          </a>
         ))}
       </div>
     </div>
