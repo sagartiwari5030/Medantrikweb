@@ -1,0 +1,66 @@
+/* src/Pages/forms.css */
+
+.form-container {
+    max-width: 800px; /* Increase the size of the form */
+    width: 100%;
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown {
+    margin-bottom: 15px;
+  }
+  
+  .dropdown-btn {
+    width: 100%;
+    background-color:#318CE7;
+    color:orange;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 22px; /* Increase font size */
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between; /* Align text and icon */
+    align-items: center;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .dropdown-icon {
+    font-size: 14px; /* Adjust icon size */
+    margin-left: 10px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color:orange;
+    margin-bottom: 30px;
+  }
+  /* src/Pages/forms.css or src/Pages/cardview.css */
+
+.cardview-title, .card-title, .card-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-link, .dropdown-btn, .card-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  

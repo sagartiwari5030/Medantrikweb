@@ -1,0 +1,70 @@
+/* src/Pages/cardview.css */
+
+.cardview-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Cooler white background for the container */
+  border-radius: 20px; /* Rounded edges for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
+}
+
+.cardview-title {
+  text-align: center;
+  color: #007A50; /* Green shade for the title */
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f5f5f5 !important; /* Light grey background for cards */
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px !important; /* Fully rounded edges for the card */
+  border: 2px solid transparent !important;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  background-color: #e9ecef; /* Slightly lighter background on hover */
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow for a 3D effect on hover */
+}
+
+.card-title {
+  color: orange; /* Orange for titles */
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-content {
+  background-color: #ffffff; /* White background for content */
+  padding: 15px;
+  border-radius: 15px; /* Slightly rounder content box */
+  margin-top: 10px;
+  color: black; /* Black for content text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.nav-link, .dropdown-btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
