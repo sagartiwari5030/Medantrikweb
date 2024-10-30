@@ -26,7 +26,7 @@ function CardView() {
       name: 'conductTest',
       title: 'Conduct Test',
       content: 'Initiate various medical tests and log the results directly in the patient’s profile.',
-      link: '#', // Placeholder link for consistent structure
+      link: '/cunduct-test', // Placeholder link for consistent structure
     },
     {
       name: 'addPatient',
@@ -55,11 +55,14 @@ function CardView() {
             className="card-link"
           >
             <div className="card">
-              <h3 className="card-title">{card.title}</h3>
+              {/* <h3 className="card-title">{card.title}</h3> */}
               <div className="card-content">
-                <div className="card-small-content">
+                
+              <h3 className="card-title">{card.title}</h3>
+
+                {/* <div className="card-small-content">
                   {card.content}
-                </div>
+                </div> */}
               </div>
             </div>
           </a>
