@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Form from './Pages/Form/form'
 import CardView from './Pages/Cardview/CardView';
 import FVCGraph from './Pages/Graph/fvcgarph';
+import SVCGraph from './Pages/Graph/svcgraph';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/form" element={<Form />} />
           <Route path="/cardview" element={<CardView />} />
           <Route path='/cunduct-test' element={<FVCGraph/>}/>
+          <Route path='/svc-test' element={<SVCGraph/>}/>
         </Routes>
       </div>
     </Router>

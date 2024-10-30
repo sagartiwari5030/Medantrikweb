@@ -32,7 +32,7 @@ function CardView() {
       name: 'addPatient',
       title: 'Add Patient',
       content: 'Easily add new patients to the system for tracking their medical history and appointments.',
-      link: '#', // Placeholder link for consistent structure
+      link: '/svc-test', // Placeholder link for consistent structure
     },
     {
       name: 'deviceSetup',
